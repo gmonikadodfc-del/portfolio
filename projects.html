@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Monika Gopinathan</title>
+<meta name="description" content="Selected test automation projects by Monika Gopinathan — IoT-to-cloud frameworks, CI/CD traceability, and distributed systems monitoring.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo"><span class="prompt">monika@qa</span>:~$<span class="cursor"></span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">~/home</a></li>
+      <li><a href="experience.html">~/experience</a></li>
+      <li><a href="skills.html">~/skills</a></li>
+      <li><a href="projects.html" class="active">~/projects</a></li>
+      <li><a href="contact.html">~/contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: 20px;">
+  <div class="wrap">
+    <p class="eyebrow">test_cases/ — 4 suites</p>
+    <h1>Projects</h1>
+    <p class="lede">A closer look at the frameworks and tools I've built, framed the way I'd explain them in a design review: the problem, the approach, and what changed as a result.</p>
+  </div>
+</header>
+
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+
+    <div class="project">
+      <div class="project-head">
+        <div>
+          <h3>IoT device-to-cloud test automation framework</h3>
+          <div class="context">KONE Corporation · 2020–2026</div>
+        </div>
+        <span class="badge">production</span>
+      </div>
+      <p>The core framework behind release testing for elevator devices connecting to AWS.</p>
+      <div class="project-detail">
+        <div>
+          <span class="label">Problem</span>
+          <p>Elevator IoT devices needed reliable component, integration, and system-level testing before every release, but environment setup — device onboarding, PKI provisioning, SSH configuration — was manual and fragile.</p>
+        </div>
+        <div>
+          <span class="label">Approach</span>
+          <p>Built a Python and Robot Framework suite treated like production code: modular, reviewed, version-controlled. Automated onboarding, certificate provisioning, and configuration, and containerised environments with Docker for reproducible local runs.</p>
+        </div>
+        <div>
+          <span class="label">Result</span>
+          <p>Fewer environment failures ahead of releases, and a test suite the team could extend with confidence rather than route around.</p>
+        </div>
+      </div>
+      <div class="tag-row">
+        <span class="pill">Python</span>
+        <span class="pill">Robot Framework</span>
+        <span class="pill">AWS</span>
+        <span class="pill">PKI</span>
+        <span class="pill">Docker</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <div>
+          <h3>GitLab–JIRA Xray integration</h3>
+          <div class="context">KONE Corporation</div>
+        </div>
+        <span class="badge">key achievement</span>
+      </div>
+      <p>Closing the gap between automated test runs and the people who need to see the results.</p>
+      <div class="project-detail">
+        <div>
+          <span class="label">Problem</span>
+          <p>Automated test results lived in the CI pipeline, disconnected from the JIRA tickets that developers and product owners actually tracked — traceability required manual cross-checking.</p>
+        </div>
+        <div>
+          <span class="label">Approach</span>
+          <p>Integrated GitLab automation pipelines directly with JIRA Xray, so test execution results flowed back into tickets automatically.</p>
+        </div>
+        <div>
+          <span class="label">Result</span>
+          <p>End-to-end traceability and real-time visibility of automated test results for developers and product owners, without manual reporting.</p>
+        </div>
+      </div>
+      <div class="tag-row">
+        <span class="pill">GitLab CI/CD</span>
+        <span class="pill">JIRA Xray</span>
+        <span class="pill">Traceability</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <div>
+          <h3>Docker–Kafka–CloudWatch monitoring pipeline</h3>
+          <div class="context">KONE Corporation</div>
+        </div>
+        <span class="badge">key achievement</span>
+      </div>
+      <p>Making failures in a distributed streaming system visible instead of guessed-at.</p>
+      <div class="project-detail">
+        <div>
+          <span class="label">Problem</span>
+          <p>Diagnosing issues in the Kafka-based streaming layer meant digging through distributed logs with no central view of event flow or failures.</p>
+        </div>
+        <div>
+          <span class="label">Approach</span>
+          <p>Built a Docker-based Kafka monitoring solution that published event logs to AWS CloudWatch, giving the team a single place to look.</p>
+        </div>
+        <div>
+          <span class="label">Result</span>
+          <p>Simplified validation and troubleshooting of the distributed system, cutting the time spent chasing failures across services.</p>
+        </div>
+      </div>
+      <div class="tag-row">
+        <span class="pill">Docker</span>
+        <span class="pill">Apache Kafka</span>
+        <span class="pill">AWS CloudWatch</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <div>
+          <h3>Set-top box end-to-end regression suite</h3>
+          <div class="context">Tata Elxsi — Client: INVIDI Technologies, Canada · 2017–2019</div>
+        </div>
+        <span class="badge">production</span>
+      </div>
+      <p>Nightly regression that ran itself, so the team found regressions before customers did.</p>
+      <div class="project-detail">
+        <div>
+          <span class="label">Problem</span>
+          <p>Set-top box functionality needed consistent end-to-end and regression coverage across releases, with test specs and risk areas to define from scratch.</p>
+        </div>
+        <div>
+          <span class="label">Approach</span>
+          <p>Wrote automated test scripts in Robot Framework and Selenium, wrote test plans in qTest, and configured Jenkins CI to run full nightly regression batches with SQL-based database validation.</p>
+        </div>
+        <div>
+          <span class="label">Result</span>
+          <p>Fast, reliable regression feedback every morning without manual intervention, and clear traceability between requirements and test coverage.</p>
+        </div>
+      </div>
+      <div class="tag-row">
+        <span class="pill">Robot Framework</span>
+        <span class="pill">Selenium</span>
+        <span class="pill">Jenkins</span>
+        <span class="pill">qTest</span>
+        <span class="pill">SQL</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monika Gopinathan</span>
+    <span><a href="mailto:gmonikadodfc@gmail.com">gmonikadodfc@gmail.com</a> · <a href="tel:+358504612170">+358 50 461 2170</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
