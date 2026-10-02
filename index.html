@@ -1,173 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monika Gopinathan — Senior Test Automation Engineer</title>
-<meta name="description" content="Senior Test Automation Engineer with 8+ years building production-grade Python and Robot Framework test suites for IoT and cloud systems.">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monika Gopinathan — Senior Test Automation Engineer</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>strong.resume-mark{font-weight:700;color:inherit}</style></head>
 <body>
-
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="nav-logo"><span class="prompt">monika@qa</span>:~$<span class="cursor"></span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">~/home</a></li>
-      <li><a href="experience.html">~/experience</a></li>
-      <li><a href="skills.html">~/skills</a></li>
-      <li><a href="projects.html">~/projects</a></li>
-      <li><a href="contact.html">~/contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="hero-loc">📍 Hyvinkää, Finland &nbsp;·&nbsp; Valid Finnish residence permit &nbsp;·&nbsp; Right to work in Finland</p>
-      <h1>Monika Gopinathan<span class="role">Senior Test Automation Engineer</span></h1>
-      <p class="lede">I build test automation that holds up under real release pressure — Python and Robot Framework suites for IoT devices talking to the cloud, distributed systems, and the pipelines that ship them safely.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="projects.html">View projects</a>
-        <a class="btn" href="assets/Monika_Gopinathan_Resume.pdf" target="_blank" rel="noopener">Download résumé ↓</a>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Monika<span class="accent">.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-    <div class="terminal" aria-hidden="false" role="img" aria-label="Terminal animation summarizing career highlights">
-      <div class="terminal-bar">
-        <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
-        <span class="terminal-title">run_suite.sh — career_summary</span>
-      </div>
-      <div class="terminal-body" id="terminal-body" data-lines='[
-        {"text":"$ whoami","speed":26,"pause":260},
-        {"text":"monika_gopinathan — senior test automation engineer","speed":14,"pause":420},
-        {"text":"$ ./run_suite.sh --career-summary","speed":22,"pause":320},
-        {"text":"[PASS] 8+ years in Python-based test automation","speed":10,"pause":180},
-        {"text":"[PASS] 6 years building production frameworks at KONE","speed":10,"pause":180},
-        {"text":"[PASS] IoT · Cloud · PKI · Kafka · Docker · CI/CD","speed":10,"pause":180},
-        {"text":"# 3 passed, 0 failed — ready for the next release","speed":10,"pause":0}
-      ]'></div>
-    </div>
-  </div>
-</header>
+  </nav>
 
-<section class="section">
-  <div class="wrap">
-    <div class="stat-strip">
-      <div class="stat"><span class="num">8+</span><span class="label">years in test automation</span></div>
-      <div class="stat"><span class="num">6</span><span class="label">years at KONE Corporation</span></div>
-      <div class="stat"><span class="num">2×</span><span class="label">ACE Performer of the Quarter</span></div>
-      <div class="stat"><span class="num">15+</span><span class="label">tools across the delivery chain</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">// about</p>
-      <h2>Reliable systems start with a test suite you can trust</h2>
-    </div>
-    <p class="lede">Over the last six years at KONE, I've owned test strategy end to end for elevator IoT devices connecting to AWS — deciding what to test, why, and how, based on release risk and system behaviour. I write test code the way I'd write application code: modular, reviewed, version-controlled, and built to outlast the release it shipped for.</p>
-    <p>Before that, I automated end-to-end regression for set-top boxes at Tata Elxsi, working on a Robot Framework and Selenium suite that ran nightly through Jenkins with no manual babysitting. Across both roles, the constant has been the same: find the fragile manual process, understand why it's fragile, and automate it properly.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">// capabilities</p>
-      <h2>Where I focus</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <span class="tag">Strategy</span>
-        <h3>Test strategy &amp; architecture</h3>
-        <p>Deciding what to test at component, integration, and system level, based on release risk rather than habit.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Systems</span>
-        <h3>IoT &amp; cloud testing</h3>
-        <p>Device-to-cloud onboarding, PKI certificate provisioning, and AWS APIs — Lambda, IoT Core, API Gateway, DynamoDB, S3.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Debugging</span>
-        <h3>Distributed systems &amp; streaming</h3>
-        <p>Root-causing failures across Kafka and MQTT pipelines, reading logs and traces to catch data integrity issues early.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Delivery</span>
-        <h3>CI/CD &amp; release engineering</h3>
-        <p>Dockerised, reproducible test environments and pipelines that give teams fast, trustworthy release feedback.</p>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Available for opportunities</div>
+      <h1 class="hero-name">Monika Gopinathan</h1>
+      <p class="hero-title">Senior Test Automation Engineer</p>
+      <p class="hero-intro"></p>
+      <div class="hero-links">
+        <a href="mailto:gmonikadodfc@gmail.com" class="btn btn-primary">Contact Me</a>
+        
+        
       </div>
     </div>
-  </div>
-</section>
+    <div class="hero-gradient"></div>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">// skills preview</p>
-      <h2>Toolset</h2>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <p class="about-text">Senior Test Automation Engineer with 8+ years of experience in Python-based test automation, software quality engineering, and system integration testing. Over the last 6 years at KONE, I have developed and maintained production-grade automation frameworks using Python and Robot Framework for large-scale IoT and cloud-connected systems. Experienced in designing automated test suites, debugging complex system failures, analyzing logs, supporting release-critical environments, and collaborating closely with developers, operators, and stakeholders.
+Strong background in Linux environments, CI/CD pipelines, Git-based development workflows, API testing, cloud technologies, device-to-cloud integration, PKI security validation, Docker, and troubleshooting distributed systems. Passionate about building reliable, maintainable, and scalable test automation solutions that improve product quality and operational efficiency.</p>
     </div>
-    <div class="tag-row">
-      <span class="pill">Python</span>
-      <span class="pill">Robot Framework</span>
-      <span class="pill">AWS (IoT Core, Lambda, API Gateway)</span>
-      <span class="pill">Apache Kafka</span>
-      <span class="pill">Docker</span>
-      <span class="pill">Jenkins / GitLab CI</span>
-      <span class="pill">PKI &amp; certificate management</span>
-      <span class="pill">Linux</span>
-      <span class="pill">SQL</span>
-    </div>
-    <a class="link-arrow" href="skills.html">See the full skill set →</a>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">// projects preview</p>
-      <h2>Selected work</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <span class="tag">Integration</span>
-        <h3>GitLab–JIRA Xray integration</h3>
-        <p>Connected automation pipelines directly to JIRA Xray, giving developers and product owners real-time traceability of test results.</p>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python<span class="skill-level">●●●●●</span></span><span class="skill-tag">SQL<span class="skill-level">●●●○○</span></span><span class="skill-tag">Bash/Shell<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Test Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Robot Framework<span class="skill-level">●●●○○</span></span><span class="skill-tag">Selenium<span class="skill-level">●●●○○</span></span><span class="skill-tag">PyCharm<span class="skill-level">●●●○○</span></span><span class="skill-tag">RIDE<span class="skill-level">●●●○○</span></span><span class="skill-tag">VS Code<span class="skill-level">●●●○○</span></span><span class="skill-tag">Python Custom Libraries<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Testing Areas</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">UI Testing<span class="skill-level">●●●○○</span></span><span class="skill-tag">API Testing<span class="skill-level">●●●○○</span></span><span class="skill-tag">Embedded Device Testing<span class="skill-level">●●●○○</span></span><span class="skill-tag">Cloud and IOT Testing<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Cloud (AWS)</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">IoT Core<span class="skill-level">●●●○○</span></span><span class="skill-tag">Lambda<span class="skill-level">●●●○○</span></span><span class="skill-tag">API Gateway<span class="skill-level">●●●○○</span></span><span class="skill-tag">DynamoDB<span class="skill-level">●●●○○</span></span><span class="skill-tag">S3<span class="skill-level">●●●○○</span></span><span class="skill-tag">CloudWatch<span class="skill-level">●●●○○</span></span><span class="skill-tag">SQS<span class="skill-level">●●●○○</span></span><span class="skill-tag">ECS<span class="skill-level">●●●○○</span></span><span class="skill-tag">EC2<span class="skill-level">●●●○○</span></span><span class="skill-tag">ACMPCA<span class="skill-level">●●●○○</span></span><span class="skill-tag">Secret Manager<span class="skill-level">●●●○○</span></span><span class="skill-tag">ECR<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Messaging &amp; Data</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Apache Kafka<span class="skill-level">●●●○○</span></span><span class="skill-tag">MQTT<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Version Control &amp; Collaboration</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git<span class="skill-level">●●●○○</span></span><span class="skill-tag">GitLab<span class="skill-level">●●●○○</span></span><span class="skill-tag">Helix<span class="skill-level">●●●○○</span></span><span class="skill-tag">Gerrit<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">DevOps &amp; CI/CD</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker<span class="skill-level">●●●○○</span></span><span class="skill-tag">Jenkins<span class="skill-level">●●●○○</span></span><span class="skill-tag">GitLab CI/CD<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Test Management</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">JIRA<span class="skill-level">●●●○○</span></span><span class="skill-tag">qTest<span class="skill-level">●●●○○</span></span><span class="skill-tag">Jama<span class="skill-level">●●●○○</span></span><span class="skill-tag">VersionOne<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Security Testing</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PKI / certificate management<span class="skill-level">●●●○○</span></span><span class="skill-tag">penetration testing fundamentals<span class="skill-level">●●●○○</span></span><span class="skill-tag">ACMPCA<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">OS &amp; Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux<span class="skill-level">●●●○○</span></span><span class="skill-tag">Windows<span class="skill-level">●●●○○</span></span><span class="skill-tag">Putty (SSH)<span class="skill-level">●●●○○</span></span><span class="skill-tag">IntelliJ<span class="skill-level">●●●○○</span></span><span class="skill-tag">PyCharm<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Testin g Expertise</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">System Testing<span class="skill-level">●●●○○</span></span><span class="skill-tag">Integration Testing<span class="skill-level">●●●○○</span></span><span class="skill-tag">Regression<span class="skill-level">●●●○○</span></span><span class="skill-tag">Hardware/Device Integration Testing<span class="skill-level">●●●○○</span></span><span class="skill-tag">Test Framework Development<span class="skill-level">●●●○○</span></span><span class="skill-tag">Test strategy Development<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Documentation</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Test Specifications<span class="skill-level">●●●○○</span></span><span class="skill-tag">Technical Documentation<span class="skill-level">●●●○○</span></span><span class="skill-tag">Release Notes<span class="skill-level">●●●○○</span></span><span class="skill-tag">Troubleshooting Guides<span class="skill-level">●●●○○</span></span>
+            </div>
+          </div>
+        
       </div>
-      <div class="card">
-        <span class="tag">Monitoring</span>
-        <h3>Docker–Kafka–CloudWatch pipeline</h3>
-        <p>A containerised Kafka monitoring solution that streams event logs to AWS CloudWatch, cutting troubleshooting time on distributed failures.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+        
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Senior Automation Test Engineer</h3>
+                <span class="timeline-date">Jan 2020 – Feb 2026</span>
+              </div>
+              <p class="timeline-company">KONE Corporation · India</p>
+              <ul class="timeline-bullets"><li>Owned end-to-end test strategy across component, integration, and system levels for elevator IoT devices connecting to AWS cloud — deciding what to test, why, and how based on release risks and system behaviour.</li><li>Built and maintained production-quality test automation frameworks in Python and Robot Framework, treating test code to the same standards as application code — modular, reviewed, and version-controlled.</li><li>Automated release-critical environment setup: device-to-cloud onboarding, PKI certificate provisioning, and SSH-based configuration — eliminating fragile manual steps and reducing environment failures before releases.</li><li>Worked extensively in Linux-based environments for test execution, debugging, automation development, and system validation</li><li>Designed automated test suites for AWS APIs (Lambda, IoT Core, API Gateway, DynamoDB, S3) covering multiple authorization methods, ensuring service reliability across releases.</li><li>Validated real-time data streaming pipelines via Apache Kafka and MQTT, writing automated checks to catch data integrity issues and communication failures between distributed components early.</li><li>Containerised test environments using Docker for local regression runs, enabling consistent, reproducible test execution independent of developer machine state.</li><li>Identified and automated fragile manual processes across the team without waiting for perfect process — continuous improvement driven by real defect and release feedback.</li><li>Performed systematic root-cause analysis of test failures using logs, system traces, and diagnostic tools, collaborating with development teams to resolve issues efficiently.</li><li>Supported engineers and stakeholders during release validation activities by troubleshooting automation, environment, and integration issues.</li><li>Collaborated with developers, product managers, and QA in an agile setup to align test strategies with release goals and shipping timelines.</li><li>Won ACE Performer of the Quarter award twice for outstanding contribution to release quality.</li></ul>
+            </div>
+          </div>
+        
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Automation Test Engineer</h3>
+                <span class="timeline-date">Oct 2017 – Dec 2019</span>
+              </div>
+              <p class="timeline-company">Tata Elxsi (Client: INVIDI Technologies, Canada) · Chennai, India</p>
+              <ul class="timeline-bullets"><li>Designed and maintained automated test scripts for set-top box end-to-end scenarios using Robot Framework and Selenium, ensuring comprehensive functional and regression coverage.</li><li>Analysed feature requirements and test specifications to define optimal automation strategies — determining what to automate, what to test manually, and where risk was highest.</li><li>Configured Jenkins CI pipelines to run full nightly regression batches automatically, giving the team fast, reliable feedback without manual intervention.</li><li>Wrote test plans in qTest and performed SQL-based database validation to ensure data integrity across system boundaries.</li><li>Worked within an agile team alongside developers and project management to meet release deadlines and continuously improve QA processes.</li><li>Won Customer Appreciation Award from delivery head for quality and reliability of testing on the INVIDI Technologies project.</li></ul>
+            </div>
+          </div>
+        
       </div>
     </div>
-    <a class="link-arrow" href="projects.html">See all projects →</a>
-  </div>
-</section>
+  </section>
 
-<section class="section" style="border-bottom:none;">
-  <div class="wrap">
-    <div class="cta-banner">
-      <div>
-        <h2>Open to new roles in test automation and quality engineering</h2>
-        <p>Based in Hyvinkää, Finland — right to work, no sponsorship needed.</p>
-      </div>
-      <a class="btn btn-primary" href="contact.html">Get in touch →</a>
+  <!-- Projects Section -->
+  
+
+  <!-- Education Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      
+        <div class="edu-card">
+          <h3>B.E. in Electronics and Communication Engineering</h3>
+          <p class="edu-institution">St Peter&#039;s Engineering College, India</p>
+          <p class="edu-meta"> – 2017 · GPA: 8.6 / 10</p>
+        </div>
+      
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Monika Gopinathan</span>
-    <span><a href="mailto:gmonikadodfc@gmail.com">gmonikadodfc@gmail.com</a> · <a href="tel:+358504612170">+358 50 461 2170</a></span>
-  </div>
-</footer>
+  <!-- Certifications Section -->
+  
 
-<script src="js/main.js"></script>
-</body>
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-subtitle">Let's build something extraordinary together.</p>
+      <div class="contact-grid">
+        <a href="mailto:gmonikadodfc@gmail.com" class="contact-card"><span class="contact-icon">✉</span><span>gmonikadodfc@gmail.com</span></a>
+        <a href="tel:+358 504612170" class="contact-card"><span class="contact-icon">📱</span><span>+358 504612170</span></a>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Monika Gopinathan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<section id="currently-learning" aria-labelledby="currently-learning-title" style="max-width:980px;margin:48px auto;padding:28px;border:1px solid rgba(99,102,241,.18);border-radius:20px;background:linear-gradient(135deg,rgba(99,102,241,.08),rgba(14,165,233,.06));font-family:inherit"><p style="margin:0 0 8px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#4f46e5;font-weight:700">Currently learning</p><h2 id="currently-learning-title" style="margin:0 0 8px;font-size:26px;line-height:1.2">Growing with intention</h2><p style="margin:0 0 18px;color:#64748b;font-size:14px">A few areas I&apos;m actively exploring next.</p><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(99,102,241,.22);border-radius:999px;padding:7px 12px;font-size:13px;color:#4338ca;background:rgba(99,102,241,.08)">Hardware-in-the-Loop (HIL)</span> <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(99,102,241,.22);border-radius:999px;padding:7px 12px;font-size:13px;color:#4338ca;background:rgba(99,102,241,.08)">Engineering design</span></div></section></body>
 </html>
